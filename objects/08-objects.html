@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>objects</title>
+    <!-- an object groups things together
+     object let us use multiple items together
+     objects make our code more organized  -->    
+  </head>
+  <body>
+   
+    <script>
+      
+      const product = {
+        name: 'socks', 
+        price: 1090
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = 'cotton socks';
+      console.log(product);
+
+      product.newProperty = true;
+      console.log(product);
+
+      delete product.newProperty;
+      console.log(product);
+      
+
+      const product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        rating: {
+          stars: 4.5,
+          count: 87
+        }, // inner object
+        fun: function function1() {
+          console.log('function inside object')
+        } // this works as function is another type of value in javascript.
+        // when we call funtion inside a object it is called a method.
+      };
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2['name']);
+      //console.log(product2.delivery-time); //gives error coz of -
+      console.log(product2['delivery-time']) // doesnt give error
+      // we use dot notation by default
+      // for properties that don't work, use braket notation
+      // inside an object we can save any type of value
+      console.log(product2.rating.count);
+      product2.fun();
+
+      console.log(typeof console);
+      console.log(typeof console.log);
+
+      console.log(JSON.stringify(product2)); // conver js to json
+
+      const jsonString = JSON.stringify(product2)
+      console.log(JSON.parse(jsonString)); // json to javascript
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1; // this code doesn't actually make a copy of the object it this makes a copy of the reference that points to the object so this makes a language more efficient because if we had a really big object here it's not good to copy the entire object over and over again instead Javas just copies the reference which is much faster this is called copy by reference 
+
+      object1.message = 'Good job';
+      console.log(object1);
+      console.log(object2);
+
+      const object3 = {
+        message: 'Good job!'
+      };
+      console.log(object3 === object1);
+      console.log(object2 === object1);
+      //  when you're comparing two variables that contain objects you're actually comparing the references not the values inside.
+
+      // Destructuring
+      const object4 = {
+        message: 'Good job!',
+        price: 799
+      };
+      // const message = object4.message;
+      const { message, price } = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        // shorthand property
+        // message: message
+        message,
+        // method: function function1() {
+        //   console.log('method');
+        // }
+        method() {
+          console.log('method')
+        }
+      };
+      console.log(object5);
+      object5.method();
+      </script> 
+  </body>
+</html>
