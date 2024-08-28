@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10e</title>
+    <style>
+      .toggle-button {
+        background-color: rgb(230,230,230);
+        color: black;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-weight: bold;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+
+      .toggle-button-music {
+        background-color: rgb(230,230,230);
+        color: black;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-weight: bold;
+      }
+      
+      .is-on {
+        background-color: black;
+        color: white;
+      }
+
+      .toggle-button-tech {
+        background-color: rgb(230,230,230);
+        color: black;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-weight: bold;
+      }
+
+      .turned-on {
+        background-color: black;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body> 
+    <button class="toggle-button js-button" onclick="
+      const button = document.querySelector('.js-button');
+      if(!button.classList.contains('is-toggled')) {
+        button.classList.add('is-toggled');
+      } else {
+        button.classList.remove('is-toggled');
+      }
+      ">Gaming</button>
+      
+      <button class="toggle-button-music js-button-music" onclick="
+      const buttonMusic = document.querySelector('.js-button-music');
+      if(!buttonMusic.classList.contains('is-on')) {
+        buttonMusic.classList.add('is-on');
+      } else {
+        buttonMusic.classList.remove('is-on');
+      }
+      ">Music</button>
+
+      <button class="toggle-button-tech js-button-tech" onclick="
+      const buttonTech = document.querySelector('.js-button-tech');
+      if(!buttonTech.classList.contains('turned-on')) {
+        buttonTech.classList.add('turned-on');
+      } else {
+        buttonTech.classList.remove('turned-on');
+      }
+      ">Tech</button>
+    <script>
+    </script>
+  </body>
+</html>

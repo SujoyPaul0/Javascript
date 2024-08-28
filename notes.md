@@ -17,3 +17,10 @@ a JavaScript object only makes sense in JavaScript on the other hand Json syntax
  The DOM combines javascript and HTML together and gives javascript the control over the webpage
  when an html element is inside a js then it is converted to an object.
  DOM combines HTML and javascript together.
+ Whenever we get a value from the DOM, the value will be a string.
+window is a built in object that represents the browser.
+
+### Main Idea of JavaScript
+1. Save the data
+2. Generate the HTML
+3. Make it interactive
