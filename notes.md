@@ -60,3 +60,7 @@ we can remove a eventListener using .removeEventListener()
 1. creates a new array[]
 2. return true,
   => put valuel in array
+
+
+## Main idea of javascript
+Save the data => generate the html => make it interective
