@@ -64,3 +64,7 @@ we can remove a eventListener using .removeEventListener()
 
 ## Main idea of javascript
 Save the data => generate the html => make it interective
+
+## Data attribute
+- is just another HTML attribute
+- allows us to attach data to any element
